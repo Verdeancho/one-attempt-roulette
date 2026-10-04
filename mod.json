@@ -1,0 +1,60 @@
+{
+    "geode":  "5.10.1",
+    "gd":  {
+               "win":  "2.2081"
+           },
+    "id":  "verdeancho.percent-roulette",
+    "name":  "One Attempt Roulette",
+    "version":  "v1.3.0",
+    "developer":  "verdeancho",
+    "description":  "One-attempt level roulette: add up your percentages by difficulty, Demonlist range or special categories.",
+    "tags":  [
+                 "online",
+                 "content",
+                 "interface"
+             ],
+    "resources":  {
+                      "sprites":  [
+                                      "resources/*.png"
+                                  ]
+                  },
+    "settings":  {
+                     "game-title":  {
+                                        "type":  "title",
+                                        "name":  "Gameplay"
+                                    },
+                     "exit-delay":  {
+                                        "type":  "float",
+                                        "name":  "Delay after dying (seconds)",
+                                        "description":  "Time between dying and automatically leaving the level.",
+                                        "default":  1.0,
+                                        "min":  0.2,
+                                        "max":  5.0,
+                                        "control":  {
+                                                        "slider":  true,
+                                                        "slider-step":  0.1,
+                                                        "arrows":  true,
+                                                        "arrow-step":  0.1
+                                                    }
+                                    },
+                     "confirm-quit":  {
+                                          "type":  "bool",
+                                          "name":  "Confirm when quitting from pause",
+                                          "description":  "Quitting a level in the middle of an attempt counts as your attempt. If enabled, you will be asked to confirm.",
+                                          "default":  true
+                                      },
+                     "obs-title":  {
+                                       "type":  "title",
+                                       "name":  "Streaming"
+                                   },
+                     "obs-export":  {
+                                        "type":  "bool",
+                                        "name":  "OBS text files",
+                                        "description":  "Writes text files (roulette.txt, total.txt, mean.txt, progress.txt, stddev.txt, level.txt, last.txt, category.txt) to the mod\u0027s save folder, so you can use them as text sources in OBS.",
+                                        "default":  false
+                                    }
+                 },
+    "links":  {
+                  "source":  "https://github.com/Verdeancho/one-attempt-roulette"
+              }
+}
